@@ -1,0 +1,17 @@
+#include<iostream>
+#include "snake.h"
+#include<ncurses.h>
+int main(){
+    initialize();
+    update();
+    while(1){
+        change_direction();
+        Snakemove();
+        update();
+        napms(20);
+    }
+    endwin();
+    return 0;
+}
+
+	
